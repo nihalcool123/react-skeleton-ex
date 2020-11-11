@@ -10,7 +10,7 @@ const User = () => {
 
       const data = await res.json();
       setProfile(data);
-    }, 2000);
+    }, 5000);
   });
 
   return (
@@ -24,7 +24,7 @@ const User = () => {
         </div>
       )}
 
-      {!profile && <SkeletonProfile theme="dark" />}
+      {!profile && <SkeletonProfile />}
     </div>
   );
 };

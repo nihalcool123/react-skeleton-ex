@@ -10,7 +10,7 @@ const Articles = () => {
 
       const data = await res.json();
       setArticles(data);
-    }, 2000);
+    }, 5000);
   });
 
   return (
